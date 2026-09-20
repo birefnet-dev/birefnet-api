@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "birefnet-api"
+version = "0.1.0"
+description = "Python client for the BiRefNet API: high-resolution background removal through a hosted endpoint"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "birefnet-dev"}]
+keywords = ["ai api", "birefnet", "birefnet api", "birefnet python", "rembg", "remove-background", "rmbg-2.0", "synexa"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://github.com/birefnet-dev/birefnet-api"
+Documentation = "https://birefnet-dev.github.io/birefnet-api/"
+"Hosted model" = "https://synexa.ai/explore/bria/rmbg-2.0?utm_source=github&utm_medium=ugc&utm_campaign=birefnet-dev&utm_content=pyproject&utm_term=tier-a"
+
+[tool.setuptools.packages.find]
+include = ["birefnet_api*"]
